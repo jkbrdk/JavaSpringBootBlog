@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head th:replace="~{fragments/layout.html :: head}"></head>
+
+<body>
+<header th:replace="~{fragments/layout.html :: header}"></header>
+
+<article>
+  <div id="centrovac">
+    <section>
+      <p th:utext="${article.content}"></p>
+
+      <a class="clanky-tlacitko" th:href="@{/articles}">Zpět na seznam</a>
+    </section>
+  </div>
+</article>
+
+<footer th:replace="~{fragments/layout.html :: footer}"></footer>
+</body>
+
+</html>

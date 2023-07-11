@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head th:replace="~{fragments/layout.html :: head}"></head>
+<body>
+<header th:replace="~{fragments/layout.html :: header}"></header>
+
+<article>
+    <div id="centrovac">
+        <section>
+            <p>
+                <img th:src="@{/images/email.png}" alt="email" class="vlevo"/>
+                Pokud mi chcete něco sdělit, napište mi email na <strong>hobi (zavináč) hobi (tečka) cz nebo využijte
+                formuláře níže</strong>.
+            </p>
+
+            <p class="centrovany">
+                <iframe frameborder="0" scrolling="no" width="500" height="220"
+                        src="https://www.itnetwork.cz/service/mail_form.php?hash=5b5a8cdab989b5e4833544f23501910b">
+                </iframe>
+            </p>
+        </section>
+    </div>
+</article>
+
+<footer th:replace="~{fragments/layout.html :: footer}"></footer>
+</body>
+</html>

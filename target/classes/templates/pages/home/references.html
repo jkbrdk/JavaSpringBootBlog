@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head th:replace="~{fragments/layout.html :: head}"></head>
+<body>
+
+</body>
+<header th:replace="~{fragments/layout.html :: header}"></header>
+
+<article>
+    <div id="centrovac">
+        <section>
+            <p>Níže naleznete ukázky mých dosavadních prací. Mohu vám nabídnout tvorbu podobného softwaru na
+                zakázku.</p>
+
+            <div id="reference">
+                <a th:href="@{/images/kalkulacka_java.png}" title="Kalkulačka v Javě" rel="lightbox[reference]">
+                    <img th:src="@{/images/kalkulacka_java_nahled.png}" alt="Kalkulačka v Javě"/>
+                </a>
+                <a th:href="@{/images/miny_pascal.png}" title="Miny v Pascalu" rel="lightbox[reference]">
+                    <img th:src="@{/images/miny_pascal_nahled.png}" alt="Miny v Pascalu"/>
+                </a>
+                <a th:href="@{/images/hobi_web.jpg}" title="Web v HTML a CSS" rel="lightbox[reference]">
+                    <img th:src="@{/images/hobi_web_nahled.jpg}" alt="Web v HTML a CSS"/>
+                </a>
+            </div>
+        </section>
+    </div>
+</article>
+
+<footer th:replace="~{fragments/layout.html :: footer}"></footer>
+</html>

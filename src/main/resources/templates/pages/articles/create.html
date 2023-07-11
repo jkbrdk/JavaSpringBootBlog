@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head th:replace="~{fragments/layout.html :: head}"></head>
+<body>
+<header th:replace="~{fragments/layout.html :: header}"></header>
+
+<article>
+    <div id="centrovac">
+        <header>
+            <h1>Nový článek</h1>
+        </header>
+
+        <section>
+            <form class="d-flex flex-column gap-2"
+                  method="post"
+                  th:action="@{/articles/create}"
+                  th:object="${articleDTO}">
+                <div class="form-group">
+                    <label for="title" class="control-label">Titulek</label>
+                    <input id="title" th:field="*{title}" class="form-control"/>
+                    <small class="text-danger" th:errors="*{title}"></small>
+                </div>
+                <div class="form-group">
+                    <label for="description" class="control-label">Popisek</label>
+                    <textarea id="description" class="form-control" th:field="*{description}"></textarea>
+                    <small class="text-danger" th:errors="*{description}"></small>
+                </div>
+                <div class="form-group">
+                    <label for="content" class="control-label">Obsah</label>
+                    <textarea id="content" class="form-control" th:field="*{content}"></textarea>
+                    <small class="text-danger" th:errors="*{content}"></small>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="clanky-tlacitko">Uložit</button>
+                </div>
+            </form>
+
+            <a class="clanky-tlacitko" th:href="@{/articles}">Zpět na seznam</a>
+        </section>
+    </div>
+</article>
+
+<footer th:replace="~{fragments/layout.html :: footer}"></footer>
+</body>
+
+</html>

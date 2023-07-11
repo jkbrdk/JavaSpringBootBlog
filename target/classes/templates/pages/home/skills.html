@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head th:replace="~{fragments/layout.html :: head}"></head>
+<body>
+
+</body>
+<header th:replace="~{fragments/layout.html :: header}"></header>
+
+<article>
+    <div id="centrovac">
+        <section>
+            <table id="dovednosti">
+                <tr class="centrovany">
+                    <td>
+                        <img th:src="@{/images/html.png}" alt="HTML"/>
+                    </td>
+                    <td>
+                        <img th:src="@{/images/java.png}" alt="Java"/>
+                    </td>
+                    <td>
+                        <img th:src="@{/images/pascal.png}" alt="Pascal"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>HTML</h2>
+                        <p>S HTML začínám a umím vytvořit jednoduché webové stránky, jako jsou tyto.</p>
+                    </td>
+                    <td>
+                        <h2>Java</h2>
+                        <p>Javu se učím z tutoriálů na devbook.cz, dokáži tvořit jednoduché konzolové i okenní aplikace
+                            a
+                            programovat objektově.</p>
+                    </td>
+                    <td>
+                        <h2>Pascal</h2>
+                        <p>Pascal nás učí ve škole, ale raději se učím moderní jazyky z devbooku.</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</article>
+
+<footer th:replace="~{fragments/layout.html :: footer}"></footer>
+</html>
