@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs-cz">
+<html lang="en">
 <head th:replace="~{fragments/layout.html :: head}"></head>
 <body>
 <header th:replace="~{fragments/layout.html :: header}"></header>
@@ -9,29 +9,27 @@
         <header>
             <h1>O mně</h1>
         </header>
-
         <section>
             <p>
-                Vítejte na mém prvním webu, psát weby se teprve učím, ale myslím, že
-                mi to docela jde.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
             </p>
             <p>
-                Jmenuji se Honza Bittner a je mi 16 let. Chodím na Střední
-                průmyslovou školu v České Lípě na obor IT. Kontaktovat mě můžete na
-                <a th:href="@{/contact}">kontaktní stránce</a>.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+                <a th:href="@{/contact}">Kontakt</a>.
             </p>
-            <p>Rád čtu a někdy (hlavně v létě) i sportuju.</p>
             <p>
-                Mým hlavním koníčkem (a doufám že jednou i zaměstnáním) je
-                <strong>programování</strong>!
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
             </p>
-
             <p class="tlacitko-odstavec">
                 <a th:href="@{/references}" class="reference-tlacitko">Moje reference</a>
             </p>
         </section>
 
-        <img th:src="@{/images/avatar.jpg}" alt="Programátor HoBi"/>
+        <img th:src="@{/images/avatar.jpg}" class="avatar" alt="Programátor"/>
+
     </div>
 </article>
 

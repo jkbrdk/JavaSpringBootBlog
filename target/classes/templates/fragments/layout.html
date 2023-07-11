@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head th:fragment="head">
-    <!-- Část zkopírovaná z HoBiho webu -->
-    <meta charset="utf-8"/>
-    <meta name="description" content="Osobní portfolio programátora HoBiho."/>
-    <meta name="keywords" content="portfolio, programátor, HoBi"/>
-    <meta name="author" content="HoBi"/>
-    <title>Moje první webová stránka</title>
 
-    <!-- Odkazy na potřebné styly, ikonky a skripty -->
+    <meta charset="utf-8"/>
+    <meta name="description" content="Osobní web"/>
+    <meta name="keywords" content="portfolio, programátor"/>
+    <meta name="author" content="HoBi"/>
+    <title>Moje webová stránka</title>
+
+
     <link rel="stylesheet" th:href="@{/styles/lightbox.min.css}" type="text/css"/>
     <link rel="stylesheet" th:href="@{/styles/bootstrap.min.css}" type="text/css"/>
     <link rel="stylesheet" th:href="@{/styles/styles.css}" type="text/css"/>
@@ -28,13 +28,11 @@
 <body>
 <header th:fragment="header">
     <div id="logo">
-        <h1>Honza<span>Bittner</span></h1>
-        <small>webdeveloper</small>
+        <h1>Jakub<span>Průdek</span></h1>
     </div>
     <nav>
         <ul>
             <li><a th:href="@{/}">Domů</a></li>
-            <!-- Stránku /articles si vytvoříme v dalších lekcích -->
             <li><a th:href="@{/articles}">Články</a></li>
             <li><a th:href="@{skills}">Dovednosti</a></li>
             <li><a th:href="@{/references}">Reference</a></li>
@@ -44,7 +42,7 @@
 </header>
 
 <footer th:fragemnt="footer">
-    Vytvořil &copy;HoBi 2021 pro <a href="https://itnetwork.cz">itnetwork.cz</a>
+   &copy;Jakub Průdek 2023
 </footer>
 </body>
 </html>
